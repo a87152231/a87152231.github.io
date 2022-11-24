@@ -1,21 +1,17 @@
 <html lang = "en">
  <head> 
-    <title> Page Of Secrets </title>
+    <title> Miss Alex's Cat</title>
     <script>
         function judge(){
             var name=document.getElementById("text").value
-            if(name == "张钰坤"){
-                alert("输入正确！")
-
-                document.write("<center><img src='b.jpg' height='500' weight='800' alt='' /></center>");
-                document.write("<center><p>天空一声巨响，帅哥闪亮登场！点击播放他的专属BGM</p></center>")
-                document.write("<center><audio loop='loop' controls='controls'> <source src='z.mp3'> </audio></center>");
-            }
-            else if(name == "张玉坤"){
-                alert("有一个经常出错的字不正确！请重新输入！")
+            if(name == "nobody"){
+                alert("Correct!")
+                document.write("<center><img src='cat.jpg' height='800' weight='1200' alt='' /></center>");
+                document.write("<center><p>Nobody is leisure.<br/><br/>Click to play the personal bgm of Alex.</p></center>")
+                document.write("<center><audio loop='loop' controls='controls'> <source src='b.mp3'> </audio></center>");
             }
             else{
-                alert("输入的并不是帅哥的名字，请重新输入！")
+                alert("Incorrect input!")
             }
 
         }
@@ -31,11 +27,11 @@
             </p>
         </center>
         <center>
-        <p> 平凡的页面下藏着一位帅哥，请输入他的名字。</p>
+        <p> A cat hidden here, input its name we konw.</p>
         </center>
         <center>
             <input type="text" id="text">
-            <input type="button" id="button" value="提交" onclick="judge()">
+            <input type="button" id="button" value="submit" onclick="judge()">
         </center>
         
     </body>
