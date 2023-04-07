@@ -1,13 +1,31 @@
 <html lang = "en">
  <head> 
-    <meta name="viewport" content="width=device-width" >
-    <title>wrong</title>
+    <title> Page Of Secrets </title>
+    <meta name="applicable-device" content="pc,mobile">
+    <title> Graph</title>
     <script>
+        function judge(){
+            var name=document.getElementById("text").value
+            if(name == "xiaotangzaihunan"){
+                alert("输入正确！")
+                document.write("<center><img src='xt.jpg' height='800' weight='1200' alt='' /></center>");
+                document.write("<center><audio loop='loop' controls='controls'> <source src='xt.mp3'> </audio></center>");
+            }
 
+            else{
+                alert("错误，请重新输入！")
+            }
+
+        }
     </script>
-    </head>
+</head>
     <body>
-        <h1>404 FOUND NOTHING<h1>
-            <h2>APNAGINX<h2>
+        <p> 输入密码查看对应图片</p>
+
+
+            <input type="text" id="text">
+            <input type="button" id="button" value="提交" onclick="judge()">
+
+        
     </body>
-   </html>
+</html>
